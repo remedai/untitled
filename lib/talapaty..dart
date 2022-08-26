@@ -464,7 +464,7 @@ children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("سعر التوصيل :1500 دزع",style: TextStyle(color: Colors.grey,),),
+              Text("سعر التوصيل :1500 د.ع",style: TextStyle(color: Colors.grey,),),
               Icon(Icons.delivery_dining,color: Colors.grey,),
               Text("جيد جدا",style: TextStyle(color: Colors.grey,),),
               Icon(Icons.sentiment_satisfied_alt_sharp,color: Colors.grey,),
