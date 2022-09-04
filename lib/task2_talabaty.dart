@@ -11,6 +11,8 @@ int price =0;
 
 class _deState extends State<de> {
   int count=0;
+
+  get toturs_home => null;
   void increment(){
     setState(() {
       count++;
@@ -29,10 +31,12 @@ price=price+6500;
 
   @override
   Widget build(BuildContext context) {
-
+print("test");
     return Scaffold(
 
-      body: Center(
+      body:SingleChildScrollView (
+        scrollDirection: Axis.vertical,
+      child:Center(
 
         child:Column(children: [
           Stack(children: [
@@ -41,6 +45,9 @@ price=price+6500;
                 color: Colors.redAccent,
                 child:Image.asset("img/burger.png",fit: BoxFit.contain,)
             ),
+            GestureDetector(onTap: (){
+              Navigator.push(context,MaterialPageRoute(builder: (context)=>toturs_home()));
+            },  child:
             Positioned(
                 top: 30,
                 right: 30,
@@ -50,9 +57,14 @@ price=price+6500;
                     borderRadius: BorderRadius.circular(12)  ,
 
                   ),
+
+
+
                   child:Icon(Icons.arrow_forward,color: Colors.black,),
 
                 )
+            ),
+
             ),
             Positioned(
                 top: 150,
@@ -285,8 +297,50 @@ price=price+6500;
               ],),
           )
         ],),
+      )
+
+      ),
+      bottomNavigationBar: NavigationBar(
+        height: 60,destinations:
+      [
 
 
+
+
+
+
+
+        NavigationDestination(
+          icon: Icon(Icons.home_outlined),
+          selectedIcon: Icon(Icons.home,color: Colors.green,),
+          label: "رئيسه",
+
+        ),
+        NavigationDestination(
+          icon: Icon(Icons.list_alt),
+          selectedIcon: Icon(Icons.list_alt,color: Colors.green,),
+          label: "طلبات",
+
+        ),
+        NavigationDestination(
+          icon: Icon(Icons.location_on_outlined),
+          selectedIcon: Icon(Icons.location_on,color: Colors.green,),
+          label: "المندوب",
+
+        ),
+        NavigationDestination(
+          icon: Icon(Icons.search_outlined),
+          selectedIcon: Icon(Icons.search,color: Colors.green,),
+          label: "بحث",
+
+        ),
+        NavigationDestination(
+          icon: Icon(Icons.person_outline_rounded),
+          selectedIcon: Icon(Icons.person,color: Colors.green,),
+          label: "حساب",
+
+        ),
+      ],
       ),
 
 

@@ -214,7 +214,7 @@ Row(
                         ],
                       )),
 
-                      
+
                     ),
 
 
@@ -227,9 +227,16 @@ SizedBox(height: 10,)
 
           ),
         ),
+
       bottomNavigationBar: NavigationBar(
         height: 60,destinations:
         [
+
+
+
+
+
+
 
           NavigationDestination(
             icon: Icon(Icons.home_outlined),

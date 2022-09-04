@@ -68,6 +68,7 @@ title: Row(mainAxisAlignment: MainAxisAlignment.start,
             child: ListView(
             scrollDirection: Axis.horizontal,
                 children: [
+
     story(),
     SizedBox(width:20 ,),
       story(),
@@ -84,8 +85,15 @@ title: Row(mainAxisAlignment: MainAxisAlignment.start,
     SizedBox(width:20 ,),
   ]
   )
-            )
-                ]
+            ),
+
+ListView.builder(itemCount: 5,itemBuilder: (BuildContext context ,int index){
+  return story();
+
+},)
+                ],
+
+
             )
           ),
 // Container(
