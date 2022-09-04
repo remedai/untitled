@@ -83,7 +83,7 @@ crossAxisAlignment: CrossAxisAlignment.start,
             color: Colors.green,
 
           ),
-          child: Image.asset("img"),
+          child: Image.asset(img),
         ),
       ),
       Padding(
