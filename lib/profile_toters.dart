@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:untitled/select%20delevary.dart';
 import 'package:untitled/task2_talabaty.dart';
+import 'package:untitled/totars_serch.dart';
+import 'package:untitled/totrs%20account.dart';
 import 'package:untitled/toture.dart';
+
+import 'orders.dart';
 class men_bar extends StatefulWidget {
   const men_bar({Key? key}) : super(key: key);
 
@@ -14,35 +19,18 @@ class _men_barState extends State<men_bar> {
   int _selectedIndex = 0;
 
   static List<Widget> _widgetOptions = <Widget>[
-    de(),
     toturs_home(),
-    de(),
+    order(),
+    delevary(),
+    serch(),
+    account(),
+
   ];
 
   Widget build(BuildContext context) {
 
     return Scaffold(
       backgroundColor: Color(0xFF1E3799),
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: 70.0,
-              height: 23,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('asset/image/tamiText.png'),
-                  fit: BoxFit.fill,
-                ),
-              ),
-            ),
-          ],
-        ),
-        elevation: 0.0,
-        backgroundColor: Color(0xFF1E3799),
-        automaticallyImplyLeading: false,
-      ),
       body: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -86,13 +74,22 @@ class _men_barState extends State<men_bar> {
                   text: 'Home',
                 ),
                 GButton(
-                  icon: Icons.person,
-                  text: 'Categories',
+                  icon: Icons.reorder,
+                  text: 'orrders',
+                ),  GButton(
+                  icon: Icons.g_mobiledata,
+                  text: 'delvary man',
+                ), GButton(
+                  icon: Icons.search,
+                  text: 'serch',
                 ),
                 GButton(
-                  icon: Icons.notifications_outlined,
-                  text: 'Notifications',
+                  icon: Icons.person,
+                  text: 'account',
                 ),
+
+
+
               ],
               selectedIndex: _selectedIndex,
               onTabChange: (index) {

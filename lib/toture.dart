@@ -228,48 +228,48 @@ SizedBox(height: 10,)
           ),
         ),
 
-      bottomNavigationBar: NavigationBar(
-        height: 60,destinations:
-        [
-
-
-
-
-
-
-
-          NavigationDestination(
-            icon: Icon(Icons.home_outlined),
-            selectedIcon: Icon(Icons.home,color: Colors.green,),
-            label: "رئيسه",
-
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.list_alt),
-            selectedIcon: Icon(Icons.list_alt,color: Colors.green,),
-            label: "طلبات",
-
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.location_on_outlined),
-            selectedIcon: Icon(Icons.location_on,color: Colors.green,),
-            label: "المندوب",
-
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.search_outlined),
-            selectedIcon: Icon(Icons.search,color: Colors.green,),
-            label: "بحث",
-
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.person_outline_rounded),
-            selectedIcon: Icon(Icons.person,color: Colors.green,),
-            label: "حساب",
-
-          ),
-      ],
-      ),
+      // bottomNavigationBar: NavigationBar(
+      //   height: 60,destinations:
+      //   [
+      //
+      //
+      //
+      //
+      //
+      //
+      //
+      //     NavigationDestination(
+      //       icon: Icon(Icons.home_outlined),
+      //       selectedIcon: Icon(Icons.home,color: Colors.green,),
+      //       label: "رئيسه",
+      //
+      //     ),
+      //     NavigationDestination(
+      //       icon: Icon(Icons.list_alt),
+      //       selectedIcon: Icon(Icons.list_alt,color: Colors.green,),
+      //       label: "طلبات",
+      //
+      //     ),
+      //     NavigationDestination(
+      //       icon: Icon(Icons.location_on_outlined),
+      //       selectedIcon: Icon(Icons.location_on,color: Colors.green,),
+      //       label: "المندوب",
+      //
+      //     ),
+      //     NavigationDestination(
+      //       icon: Icon(Icons.search_outlined),
+      //       selectedIcon: Icon(Icons.search,color: Colors.green,),
+      //       label: "بحث",
+      //
+      //     ),
+      //     NavigationDestination(
+      //       icon: Icon(Icons.person_outline_rounded),
+      //       selectedIcon: Icon(Icons.person,color: Colors.green,),
+      //       label: "حساب",
+      //
+      //     ),
+      // ],
+      // ),
     );
   }
   Row card_kind(String img_photo,String kind_img){
